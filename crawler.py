@@ -60,10 +60,9 @@ def set_to_file(links, file):
 
 
 
-'''
 create_project_dir('SoundCloud')
 create_datafiles('SoundCloud', 'https://soundcloud.com')
-'''
+
 
 
 
