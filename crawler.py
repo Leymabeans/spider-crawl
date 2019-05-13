@@ -2,15 +2,15 @@
 import os
 
 
-#Each website crawled will be its own project
+
+
+#Creating a folder and two files for the website being crawled============
 def create_project_dir(directory):
     if not os.path.exists(directory):
         print("Creating project " + directory)
         os.makedirs(directory)
 
 
-
-#Create queue and crawled files
 def create_datafiles(directory, base_url):
     queue = directory + '/queue.txt'
     crawled = directory + '/crawled.txt'
@@ -21,30 +21,25 @@ def create_datafiles(directory, base_url):
 
 
 
-#Create a new file for information gathered
+
+
+#Manipulate file for holding the gathered information=====================
 def write_file(path, data):
     f = open(path, 'w')
     f.write(data)
     f.close()
 
 
-
-
-#Add gathered information to the file
 def append_to_file(path, data):
     with open(path, 'a') as file:
         file.write(data + '\n')
 
 
-
-#Delete the contents of the file
 def delete_file_contents(path):
     with open(path, 'w'):
         pass
 
 
-
-#Read the file and convert each line to set items
 def file_to_set(file_name):
     results = set()
     with open(file_name, 'rt') as f:
@@ -53,8 +48,6 @@ def file_to_set(file_name):
     return results
 
 
-
-#Iterate the set, a new line for each item
 def set_to_file(links, file):
     delete_file_contents(file)
     for link in sorted(links):
