@@ -1,10 +1,13 @@
+#Imports and prerequisites
 import os
 
-#Each website that is crawled will create a new folder
+
+#Each website crawled will be its own project
 def create_project_dir(directory):
     if not os.path.exists(directory):
         print("Creating project " + directory)
         os.makedirs(directory)
+
 
 
 #Create queue and crawled files
@@ -17,11 +20,13 @@ def create_datafiles(directory, base_url):
         write_file(crawled, '')
 
 
+
 #Create a new file for information gathered
 def write_file(path, data):
     f = open(path, 'w')
     f.write(data)
     f.close()
+
 
 
 
@@ -46,6 +51,7 @@ def file_to_set(file_name):
         for line in f:
             results.add(line.replace('\n', ''))
     return results
+
 
 
 #Iterate the set, a new line for each item
