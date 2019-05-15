@@ -21,3 +21,8 @@ class Spider:
         Spider.base_url = base_url
         Spider.domain_name = domain_name
         Spider.queue_file = Spider.directory + '/queue.txt'
+        Spider.crawled_file = Spider.directory + '/crawled.txt'
+        self.boot()
+        self.crawl_page('Spider 1', Spider.base_url)
+
+
