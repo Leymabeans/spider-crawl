@@ -30,3 +30,4 @@ class LinkFinder(HTMLParser):
     #Returns any errors in the HTML Parser
     def error(self, message):
         pass
+
