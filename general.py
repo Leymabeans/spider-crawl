@@ -4,6 +4,7 @@ import os
 
 
 
+
 #Creating a folder and two files for the website being crawled============
 def create_project_dir(directory):
     if not os.path.exists(directory):
@@ -11,9 +12,9 @@ def create_project_dir(directory):
         os.makedirs(directory)
 
 
-def create_datafiles(directory, base_url):
-    queue = directory + '/queue.txt'
-    crawled = directory + '/crawled.txt'
+def create_datafiles(project_name, base_url):
+    queue = project_name + '/queue.txt'
+    crawled = project_name + '/crawled.txt'
     if not os.path.isfile(queue):
         write_file(queue, base_url)
     if not os.path.isfile(crawled):
@@ -54,13 +55,6 @@ def set_to_file(links, file):
         append_to_file(file, link)
 
 
-
-
-
-
-
-create_project_dir('SoundCloud')
-create_datafiles('SoundCloud', 'https://soundcloud.com')
 
 
 

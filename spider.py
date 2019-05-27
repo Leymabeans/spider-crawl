@@ -25,12 +25,14 @@ class Spider:
         self.boot()
         self.crawl_page('Spider 1', Spider.base_url)
 
+
     #After boot up, perform crawling process
     def boot(self):
         create_project_dir(Spider.directory)
         create_datafiles(Spider.directory, Spider.base_url)
         Spider.queue = file_to_set(Spider.queue_file)
         Spider.crawled = file_to_set(Spider.crawled_file)
+
 
     #Pass in url and get all links and add to directories
     @staticmethod
@@ -61,6 +63,7 @@ class Spider:
             print('Error: can not crawl page')
             return set()
         return finder.page_links()
+
 
     #Checks if links are owned by website, and if those are already in the sets
     @staticmethod
