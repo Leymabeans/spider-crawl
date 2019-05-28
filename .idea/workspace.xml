@@ -4,9 +4,6 @@
     <list default="true" id="4e188124-17b5-452c-bea1-7645acd559ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/general.py" beforeDir="false" afterPath="$PROJECT_DIR$/general.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="300">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -51,9 +48,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -293,7 +290,28 @@
       <option name="project" value="LOCAL" />
       <updated>1558925991845</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Created application buttons">
+      <created>1558976275477</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1558976275477</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Bug fixes">
+      <created>1558976327623</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1558976327623</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Main functions to operate web crawler">
+      <created>1558976351982</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1558976351982</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -306,15 +324,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="761" y="0" width="782" height="831" extended-state="0" />
-    <editor active="true" />
+    <frame x="762" y="0" width="781" height="830" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2386059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32714286" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32761088" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -362,7 +379,10 @@
     <MESSAGE value="Holds high level functions for running web crawler" />
     <MESSAGE value="Bug fix" />
     <MESSAGE value="File for creating web crawler application" />
-    <option name="LAST_COMMIT_MESSAGE" value="File for creating web crawler application" />
+    <MESSAGE value="Created application buttons" />
+    <MESSAGE value="Bug fixes" />
+    <MESSAGE value="Main functions to operate web crawler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main functions to operate web crawler" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Wikipedia/crawled.txt" />
@@ -426,8 +446,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="300">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>

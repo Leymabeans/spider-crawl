@@ -3,19 +3,16 @@ from tkinter import *
 
 root = Tk()
 
-topFrame = Frame(root)
-topFrame.pack(side=TOP)
-bottomFrame = Frame(root)
-bottomFrame.pack(side=BOTTOM)
+label1 = Label(root, text="Name")
+label2 = Label(root, text="Password")
+entry1 = Entry(root)
+entry2 = Entry(root)
+check = Checkbutton(root, text="Keep me logged in")
 
-button1 = Button(topFrame, text="Choose website", fg="red")
-button2 = Button(topFrame, text="Pick how many pages", fg="red")
-button3 = Button(topFrame, text="Choose threads", fg="red")
-button4 = Button(bottomFrame, text="Start web crawler", fg="red")
-
-button1.pack(side=LEFT)
-button2.pack(side=LEFT)
-button3.pack(side=LEFT)
-button4.pack()
+label1.grid(row=0, column=0, sticky=E)
+label2.grid(row=1, column=0, sticky=E)
+entry1.grid(row=0, column=1)
+entry2.grid(row=1, column=1)
+check.grid(row=2, columnspan=2)
 
 root.mainloop()
