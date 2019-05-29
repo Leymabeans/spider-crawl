@@ -1,18 +1,25 @@
+import sys
 from tkinter import *
 
 
+class NathansButton:
+    def __init__(self, master):
+        frame = Frame(master, width=500, height=500)
+        frame.pack()
+
+        self.printButton = Button(frame, text="Print Message", bg="green")
+        self.printButton.pack(side=LEFT)
+        self.printButton.bind("<Button-1>", self.printMessage)
+
+        self.quitButton = Button(frame, text="Exit", bg="red")
+        self.quitButton.pack(side=LEFT)
+        self.quitButton.bind("<Button-1>", self.exit)
+
+    def printMessage(self, event):
+        print("This actually worked")
+
+    def exit(self, event):
+        sys.exit()
 root = Tk()
-
-label1 = Label(root, text="Name")
-label2 = Label(root, text="Password")
-entry1 = Entry(root)
-entry2 = Entry(root)
-check = Checkbutton(root, text="Keep me logged in")
-
-label1.grid(row=0, column=0, sticky=E)
-label2.grid(row=1, column=0, sticky=E)
-entry1.grid(row=0, column=1)
-entry2.grid(row=1, column=1)
-check.grid(row=2, columnspan=2)
-
+n = NathansButton(root)
 root.mainloop()
