@@ -1,9 +1,13 @@
+#General imports====================================
 import threading
 from queue import Queue
 from spider import Spider
 from domain import *
 from general import *
 
+
+
+#Set variables for individual project==============
 PROJECT_NAME = 'sound-cloud'
 HOMEPAGE = 'https://soundcloud.com/'
 DOMAIN_NAME = get_domain_name(HOMEPAGE)
@@ -14,7 +18,8 @@ queue = Queue()
 Spider(PROJECT_NAME, HOMEPAGE, DOMAIN_NAME)
 
 
-# Create worker threads (will die when main exits)
+
+#Creates threads (spiders) for crawling===========
 def create_workers():
     for _ in range(NUMBER_OF_THREADS):
         t = threading.Thread(target=work)
@@ -22,7 +27,8 @@ def create_workers():
         t.start()
 
 
-# Do the next job in the queue
+
+#Get all of the URLs and index through them=======
 def work():
     while True:
         url = queue.get()
@@ -30,7 +36,8 @@ def work():
         queue.task_done()
 
 
-# Each queued link is a new job
+
+#Creating tasks (jobs) for the threads to complete
 def create_jobs():
     for link in file_to_set(QUEUE_FILE):
         queue.put(link)
@@ -38,7 +45,8 @@ def create_jobs():
     crawl()
 
 
-# Check if there are items in the queue, if so crawl them
+
+#Checks queue and proceeds to crawl==============
 def crawl():
     queued_links = file_to_set(QUEUE_FILE)
     if len(queued_links) > 0:
