@@ -2,6 +2,10 @@
   <img src="https://raw.githubusercontent.com/nathanleysgit/spider-crawl/master/images/title.jpg" height="400" width="400"/>
 </p>
 
+## UPDATE FALL 2020
+As of 10/5/2020 Spider Crawl will no longer be maintained. At this time, Any private releases of the source code have been depreciated and thus no longer used. 
+
+<br></br>
 ## Overview
 Multi-threaded website crawler to gather links within a website. Information gatheredcan be displayed, indexed through, and analyzed to the users desriction. Especially helpfulfor creating sitemaps for the users websites. This program abides by all website robot scripts.<br><br>
 
